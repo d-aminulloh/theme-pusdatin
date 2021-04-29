@@ -360,6 +360,15 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   margin: 0;
+  color: #333333;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
 }
 
 #logo-bottom .logo-bottom-text span{
@@ -367,6 +376,14 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
 }
 
 .search-bar{
@@ -412,10 +429,6 @@ input::placeholder {
     box-shadow: none;
 }
 
-/*--------------------------------------------------------------
-# Slider
---------------------------------------------------------------*/
-.carousel-indicators-round{ width: 14px; height: 14px; border-radius: 100%; }
 
 /*--------------------------------------------------------------
 # Hero Section
