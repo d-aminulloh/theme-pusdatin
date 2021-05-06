@@ -706,45 +706,77 @@ input::placeholder {
   margin-top: 20px;
   background: url(../img/group-340.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
-#prestasi h2 {
-  font-family: Open Sans;
-  font-style: normal;
+.content-prestasi{
+  width: 100%;
+  padding: 4% 0%;
+}
+
+.underline{
   font-weight: 600;
   font-size: 22px;
   line-height: 30px;
-  display: flex;
+  color: white;
   align-items: center;
   letter-spacing: -0.03em;
-  color: #FCFCFC;
+
 }
 
-#prestasi hr {
+.underline:after{
+  content: '';
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #F9B205;
+}
+
+.content-prestasi hr {
   width: 150px;
   height: 5px;
-  margin: 10px 0px;
-  top: 8px;
+  margin: -5px ​0px;
   background: #F9B205;
   float: left;
   clear: both;
   display: block;
 }
 
-.content-prestasi{
-  width: 100%;
-  padding-top: 3%;
-}
-
 .photo-prestasi-info{
   width: 100%;
   padding-top: 3%;
 }
+.photo-prestasi-item{
+  margin: 0 auto;
+  padding: 0 auto;
 
+}
 .icon-prestasi-terbaru{
   width: 100%;
-  padding-top: 3%; 
+  padding: 3% 0%; 
+  font-size: 13px;
+}
+
+.title-prestasi h3{
+  color: #FCFCFC;
+  font-size: 20px;
+}
+
+.deskripsi-prestasi{
+  color:  #BBBBBB;
+  font-size: 14px;
+}
+.deskripsi-prestasi a{
+  color: #F9B205;
+}
+
+
+/*--------------------------------------------------------------
+# Info pustadin
+--------------------------------------------------------------*/
+.info-judul{
+  margin-bottom: 30px;
 }
 
 
