@@ -418,6 +418,8 @@ input::placeholder {
   font-weight: 400;
 }
 
+
+
 .navbar-form .input-search{
   border: none;
   width: 70%;
@@ -430,16 +432,105 @@ input::placeholder {
   box-shadow: none;
 }
 
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: calc(100vh - 82px);
+  background: url("../img/slide1.png") center center;
+  background-size: cover;
+  position: relative;
+  /*margin-top: 200px;*/
+  padding: 0;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  z-index: 2;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  border-color: #1bac91;
+  background: #1bac91;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Profile Section
 --------------------------------------------------------------*/
-#profile {
+.profile {
   width: 100%;
   height: calc(100vh - 82px);
   margin-top: 20px;
 }
 
-#profile:before {
+.profile:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -448,11 +539,11 @@ input::placeholder {
   right: 0;
 }
 
-#profile .container {
+.profile .container {
   z-index: 2;
 }
 
-#profile h2 {
+.profile h2 {
   font-family: Open Sans;
   font-style: normal;
   font-size: 22px;
@@ -463,9 +554,9 @@ input::placeholder {
   margin: 0;
 }
 
-#profile hr {
+.profile hr {
   width: 150px;
-  height: 5px;
+  height: 3px;
   margin-top: 5px;
   top: 8px;
   background: #1C76BC;
@@ -476,6 +567,7 @@ input::placeholder {
 
 .content-profile{
   width: 100%;
+  height: auto;
   margin: 0 auto;
   justify-content: center;
 }
@@ -487,6 +579,7 @@ input::placeholder {
   line-height: 45px;
   color: #333333;
 }
+
 
 .content-profile span{
   width: 500px;
@@ -501,10 +594,16 @@ input::placeholder {
   color: #888888;
 }
 
+
 .video-profile{
   width: 100%;
-  height: 400px;
+  height: auto;
   border-radius: 2px 2px 0px 0px;
+}
+
+.video-profile img{
+  width: 100%;
+  height: auto;
 }
 
 .footer-video-profile{
@@ -518,29 +617,36 @@ input::placeholder {
   height: 100%;
   background: #333333;
   border-radius: 0px 0px 0px 2px;
+  padding: 10px 20px;
   float: left;
 }
 
 .footer-video-profile1 span{
     color: white;
     font-style: italic;
-    padding: 15px 20px;
-    position: absolute;
     font-size: 13px;
 }
 
 .footer-video-profile2{
-  margin-left: 18%;
+  /*margin-left: 18%;
   height: 60px;
   background: linear-gradient(105.69deg, #1C76BC 18.16%, #245983 78.57%);
+  border-radius: 0px 0px 2px 0px;*/
+
+  width: 12%;
+  height: 100%;
+  background: linear-gradient(105.69deg, #1C76BC 18.16%, #245983 78.57%);
   border-radius: 0px 0px 2px 0px;
+  padding: 15px 15px;
+  float: right;
 }
+
 
 .footer-video-profile2 img{
   text-align: center;
-  display: block;
-  padding: 8px 8px;
+  width: 30px;
 }
+
 
 .icon-video-profile{
   width: 80px;
@@ -578,7 +684,7 @@ input::placeholder {
 
 @media (max-width: 992px) {
   #profile {
-    margin-top: 60px;
+    margin-top: 0px;
     height: calc(100vh - 60px);
   }
 }
@@ -588,12 +694,11 @@ input::placeholder {
     font-size: 28px;
     line-height: 36px;
   }
-  #profile h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
+  
+
 }
+
+
 
 /*--------------------------------------------------------------
 # Profile Section
@@ -606,6 +711,7 @@ input::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .content-prestasi{
   width: 100%;
@@ -646,11 +752,15 @@ input::placeholder {
 .photo-prestasi-item{
   margin: 0 auto;
   padding: 0 auto;
-}
 
-..prestasi-info i{
+}
+.icon-prestasi-terbaru{
   width: 100%;
   font-size: 13px;
+}
+
+.prestasi-info .icon-prestasi{
+  color: #F9B205;
 }
 
 .prestasi-info h3{
@@ -662,9 +772,10 @@ input::placeholder {
   color:  #BBBBBB;
   font-size: 14px;
 }
-.prestasi-info a{
+.deskripsi-prestasi a{
   color: #F9B205;
 }
+
 
 /*--------------------------------------------------------------
 # Info pustadin
@@ -695,6 +806,7 @@ input::placeholder {
   height: auto;
   border-radius: 10px;
 }
+
 
 .summary-info{
   position: relative;
@@ -752,16 +864,17 @@ input::placeholder {
    
 }
 
+
 .bg-right-program{
-  background: linear-gradient(90deg, #FFF1E1 0%, #FCFCFC 100%);
-  border-radius: 10px;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
+background: linear-gradient(90deg, #FFF1E1 0%, #FCFCFC 100%);
+border-radius: 10px;
+position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
 }
 
 .content-right-program{
@@ -788,7 +901,7 @@ input::placeholder {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -813,9 +926,11 @@ section {
   margin-bottom: 0;
 }
 
+
+
 #footer {
   background: white;
-  padding: 0 auto;
+  padding: 0 0 30px 0;
   color: black;
   font-size: 14px;
 }
@@ -835,12 +950,6 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
-}
-
-#footer .footer-top .footer-info span {
-  font-size: 15px;
-  line-height: 20px;
-  color: #888888;
 }
 
 #footer .footer-top .footer-info p {
@@ -907,16 +1016,8 @@ line-height: 20px;
   color: #34dfbf;
 }
 
-.copyright{
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #888888;
-}
 
-.copyright span{
-  color: #1C76BC; 
-}
+
 
 
 /*--------------------------------------------------------------
@@ -953,12 +1054,14 @@ line-height: 20px;
   margin-right: auto;
 }
 
+
 .forgot-password{
   text-align: center;
   font-size: 13px;
   color: #333333;
 
 }
+
 
 .login-button{
   display: block;
@@ -969,6 +1072,7 @@ line-height: 20px;
   background-color: #E8E8E8;
   border-color: #E8E8E8;
 }
+
 
 .button-biru{
   width: 215px;
@@ -983,12 +1087,14 @@ line-height: 20px;
   letter-spacing: 0.02em;
 }
 
+
 .button-biru:hover{
   background: #FCFCFC;
   border-radius: 2px;
   color: #1C76BC;
   border: 2px solid #1C76BC;
 }
+
 
 .input-group-prepend span{
   width: 50px;
