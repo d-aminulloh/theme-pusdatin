@@ -70,11 +70,21 @@
 <div id="logo-bottom">
   <div class="container">
     <div class="ml-4">
-      <img src="assets/img/logo.png">
-      <div class="logo-bottom-text">
-        <h3>PUSDATIN</h3>
-        <span>Pengelola Data Siaran</span>
+      <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 ">
+          <img src="assets/img/logo.png">
+                <div class="logo-bottom-text">
+                  <h3>PUSDATIN</h3>
+                  <span>Pengelola Data Siaran</span>
+                </div>
+        </div>
+        <div class="p-4 flex-shrink-1 ">
+          <div class="icon-nav-mobile">
+            <img src="assets/img/nav-menu.png">
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -103,15 +113,17 @@
 
 <main id="main">
 
-  <section id="profile" class="profile">
+  <div id="profile" class="profile">
     <div class="container">
       <div class="row">
 
-        <div class="col-12 py-3">
+        <div class="col-12 pt-5 pb-3">
           <h2>Profil Radio Republik Indonesia</h2>
           <hr>
         </div>
 
+
+        
         <div class="col-md-6 col-sm-12">
           <div>
             <div class="content-profile">
@@ -134,12 +146,12 @@
         </div>
 
         <div class="col-md-6 col-sm-12">
-          <div class="content-profile">
+          <div class="content-profile py-4">
             <h1>Sekali Di Udara Tetap Di Udara</h1>
-            <span> 
+            <p> 
                 RRI adalah satu-satunya radio yang menyandang nama negara yang siarannya ditujukan untuk kepentingan bangsa dan negara. RRI sebagai Lembaga Penyiaran Publik yang independen, netral dan tidak komersial yang berfungsi memberikan pelayanan siaran informasi, pendidikan, hiburan yang sehat, kontrol sosial, serta menjaga citra positif bangsa di dunia internasional.
-              </span>
-              <div class="text-right pt-5">
+              </p>
+              <div class="text-lg-right text-center pt-5">
                 <button class="button-biru">Baca selengkapnya</button>
               </div>
           </div>
@@ -147,7 +159,8 @@
           
       </div>
     </div>
-  </section>
+  </div>
+
 
 
   <div id="prestasi" class="prestasi">
@@ -156,7 +169,7 @@
       <div class="row">
 
         <div class="col-12 py-3">
-          <span class="underline">Prestasi Terbaru</span>
+          <span class="underline-prestasi">Prestasi Terbaru</span>
         </div>
 
         <div class="col-12">
@@ -164,8 +177,13 @@
               <div class="owl-carousel">
 
                 <div class="prestasi-info m-0 p-3">
-                  <img src="assets/img/image 5.png" class="img-fluid" alt="">
-                  <div class="my-3" style="color: #F9B205">
+                  <!-- <img src="assets/img/image 5.png" class="img-fluid" alt=""> -->
+                  
+                  <div class="img-hover-zoom">
+                    <img src="assets/img/image 5.png" alt="">
+                  </div>
+
+                  <div class="my-3 icon-prestasi">
                       <i class="icofont-calendar icofont-1x"></i> <span>14 Dec 2020</span>
                       <i class="icofont-google-map icofont-1x"></i> <span>Jakarta</span>
                   </div>
@@ -176,7 +194,10 @@
                 </div>
 
                 <div class="prestasi-info m-0 p-3">
-                  <img src="assets/img/image 6.png" class="img-fluid" alt="">
+                  <div class="img-hover-zoom">
+                    <img src="assets/img/image 6.png" alt="">
+                  </div>
+
                   <div class="my-3 icon-prestasi">
                       <i class="icofont-calendar icofont-1x"></i> <span>14 Dec 2020</span>
                       <i class="icofont-google-map icofont-1x"></i> <span>Jakarta</span>
@@ -188,7 +209,9 @@
                 </div>
 
                 <div class="prestasi-info m-0 p-3">
-                  <img src="assets/img/image 7.png" class="img-fluid" alt="">
+                  <div class="img-hover-zoom">
+                    <img src="assets/img/image 7.png" alt="">
+                  </div>
                   <div class="my-3 icon-prestasi">
                       <i class="icofont-calendar icofont-1x"></i> <span>14 Dec 2020</span>
                       <i class="icofont-google-map icofont-1x"></i> <span>Jakarta</span>
@@ -200,7 +223,9 @@
                 </div>
 
                 <div class="prestasi-info m-0 p-3">
-                  <img src="assets/img/image 6.png" class="img-fluid" alt="">
+                  <div class="img-hover-zoom">
+                    <img src="assets/img/image 5.png" alt="">
+                  </div>
                   <div class="my-3 icon-prestasi">
                       <i class="icofont-calendar icofont-1x"></i> <span>14 Dec 2020</span>
                       <i class="icofont-google-map icofont-1x"></i> <span>Jakarta</span>
@@ -212,7 +237,9 @@
                 </div>
 
                 <div class="prestasi-info m-0 p-3">
-                  <img src="assets/img/image 7.png" class="img-fluid" alt="">
+                  <div class="img-hover-zoom">
+                    <img src="assets/img/image 7.png" alt="">
+                  </div>
                   <div class="my-3" style="color: #F9B205">
                       <i class="icofont-calendar icofont-1x"></i> <span>14 Dec 2020</span>
                       <i class="icofont-google-map icofont-1x"></i> <span>Jakarta</span>
@@ -234,131 +261,151 @@
   <section id="info" class="info">
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 col-sm-12">
           <div class="info-judul"><h2>Info Pustadin</h2></div>
           <div class="summary-info">
             <div class="summary-info-body">
+          
+              <div class="row">
+                <div class="col col-lg-4">
+                  <div class="position-relative">
+                    <div class="rotate-img">
+                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-8 info-content mb-1">
+                  <div class="mb-2">
+                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
+                  </div>
+                  <h2 class="mb-2">
+                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
+                  </h2>
+                  <p class="mb-0">
+                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
+                  </p>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col col-lg-4">
+                  <div class="position-relative">
+                    <div class="rotate-img">
+                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-8 info-content mb-1">
+                  <div class="mb-3">
+                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
+                  </div>
+                  <h2 class="mb-2">
+                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
+                  </h2>
+                  <p class="mb-0">
+                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
+                  </p>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col col-lg-4">
+                  <div class="position-relative">
+                    <div class="rotate-img">
+                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-8 info-content mb-1">
+                  <div class="mb-2">
+                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
+                  </div>
+                  <h2 class="mb-2">
+                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
+                  </h2>
+                  <p class="mb-0">
+                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
+                  </p>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col col-lg-4">
+                  <div class="position-relative">
+                    <div class="rotate-img">
+                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-8 info-content mb-1">
+                  <div class="mb-2">
+                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
+                  </div>
+                  <h2 class="mb-2">
+                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
+                  </h2>
+                  <p class="mb-0">
+                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
+                  </p>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col col-lg-4">
+                  <div class="position-relative">
+                    <div class="rotate-img">
+                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-8 info-content mb-1">
+                  <div class="mb-2">
+                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
+                  </div>
+                  <h2 class="mb-2">
+                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
+                  </h2>
+                  <p class="mb-0">
+                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
+                  </p>
+                </div>
+              </div>
+              <hr>
+
+              <div class="row">
+                <div class="col col-lg-4">
+                  <div class="position-relative">
+                    <div class="rotate-img">
+                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-8 info-content mb-1">
+                  <div class="mb-2">
+                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
+                  </div>
+                  <h2 class="mb-2">
+                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
+                  </h2>
+                  <p class="mb-0">
+                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
+                  </p>
+                </div>
+              </div>
               
-              <div class="row">
-                <div class="col-sm-4 grid-margin">
-                  <div class="position-relative">
-                    <div class="rotate-img">
-                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 grid-margin info-content mb-1">
-                  <div class="icon-prestasi-terbaru mb-3">
-                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
-                  </div>
-                  <h2 class="mb-2 judul-summary-info">
-                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
-                  </h2>
-                  <p class="mb-0 content-summary-info">
-                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
-                  </p>
-                </div>
-              </div>
-              <hr>
-
-              <div class="row">
-                <div class="col-sm-4 grid-margin">
-                  <div class="position-relative">
-                    <div class="rotate-img">
-                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 grid-margin info-content mb-1">
-                  <div class="icon-prestasi-terbaru mb-3">
-                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
-                  </div>
-                  <h2 class="mb-2 judul-summary-info">
-                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
-                  </h2>
-                  <p class="mb-0 content-summary-info">
-                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
-                  </p>
-                </div>
-              </div>
-              <hr>
-
-              <div class="row">
-                <div class="col-sm-4 grid-margin">
-                  <div class="position-relative">
-                    <div class="rotate-img">
-                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 grid-margin info-content mb-1">
-                  <div class="icon-prestasi-terbaru mb-3">
-                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
-                  </div>
-                  <h2 class="mb-2 judul-summary-info">
-                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
-                  </h2>
-                  <p class="mb-0 content-summary-info">
-                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
-                  </p>
-                </div>
-              </div>
-              <hr>
-
-
-              <div class="row">
-                <div class="col-sm-4 grid-margin">
-                  <div class="position-relative">
-                    <div class="rotate-img">
-                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 grid-margin info-content mb-1">
-                  <div class="icon-prestasi-terbaru mb-3">
-                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
-                  </div>
-                  <h2 class="mb-2 judul-summary-info">
-                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
-                  </h2>
-                  <p class="mb-0 content-summary-info">
-                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
-                  </p>
-                </div>
-              </div>
-              <hr>
-
-
-              <div class="row">
-                <div class="col-sm-4 grid-margin">
-                  <div class="position-relative">
-                    <div class="rotate-img">
-                      <img src="assets/img/image 8.png" alt="thumb" class="img-info">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8 grid-margin info-content mb-1">
-                  <div class="icon-prestasi-terbaru mb-3">
-                    <span class="mr-2"><i class="icofont-ui-calendar icofont-1x"></i> 17 Mar 2021 </span> <i class="icofont-google-map icofont-1x"></i> Jakarta
-                  </div>
-                  <h2 class="mb-2 judul-summary-info">
-                    Launching RRI Sprint, Lompatan Revolusi Digitalisasi Launching RRI Sp...
-                  </h2>
-                  <p class="mb-0 content-summary-info">
-                    Bursa saham Amerika Serikat melemah pada perdagangan Selasa (14/1/2020), membalikkan rekor intraday tertinggi sebelumnya, menyusul laporan bahwa AS kemungkinan akan mempertahankan.
-                  </p>
-                </div>
-              </div>
-              
-              <div class="text-right pt-5">
-                <button class="button-biru">Berita Lengkapnya</button>
+              <div class="text-lg-right text-center py-5">
+                <button class="button-biru">Berita lainnya</button>
               </div>
 
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
           <div class="parent-judul-program">
             <div class="square-right-program"></div>
             <div class="judul-right-program">Program Siaran RRI</div>  
@@ -422,7 +469,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-6">
+        <div class="col col-md-6">
           <div class="footer-info">
             <img src="assets/img/logo-footer 1.png" class="logo-footer pb-3">
             <br>
@@ -432,7 +479,7 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col col-md-6">
           <div class="footer-info">
               <h3>Kontak Kami</h3>
               <p>
@@ -478,7 +525,27 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+          margin: 1,
+          loop: false,
+          items: 1,
+          stagePadding: 40
+        },
+        600:{
+            items:3,
+            loop:false
+        },
+        1000:{
+            items:3,
+            loop:false
+        }
+    }
+  })
 });
 </script>
 
