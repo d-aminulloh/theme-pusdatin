@@ -29,7 +29,7 @@
   <div class="container d-flex mb-3">
 
     <div class="flex-grow-1">
-      <nav class="nav-menu d-none d-lg-block">
+      <nav class="nav-new d-none d-lg-block">
         <ul>
           <li class="active"><a href="#">Beranda</a></li>
           <li class="drop-down"><a href="">Profile</a>
@@ -57,7 +57,7 @@
     </div>
 
     <div>
-      <nav class="nav-menu d-none d-lg-block">
+      <nav class="nav-new d-none d-lg-block">
         <ul>
           <li ><a href="../theme-pusdatin/login.html">Login</a></li>
         </ul>
@@ -76,8 +76,13 @@
         <h3>PUSDATIN</h3>
         <span>Pengelola Data Siaran</span>
       </div>
-      
-      <!-- <div class="d-flex bd-highlight">
+
+    </div>
+  </div>
+</div>
+
+ <div id="menu-mobile">
+      <div class="d-flex bd-highlight">
         <div class="p-2 w-100 ">
           <img src="assets/img/logo.png">
             <div class="logo-bottom-text">
@@ -86,15 +91,12 @@
             </div>
         </div>
         <div class="p-4 flex-shrink-1 ">
-          <div class="icon-nav-mobile">
-            <img src="assets/img/nav-menu.png">
+          <div class="icon-nav-mobile pt-3">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="assets/img/nav-menu.png"></a>
           </div>
         </div>
-      </div> -->
-
-    </div>
-  </div>
-</div>
+      </div>
+      </div>
 
 
 
@@ -554,6 +556,15 @@
     }
   })
 });
+
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 </script>
 
 </body>

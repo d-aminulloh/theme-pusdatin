@@ -1,9 +1,9 @@
 !(function($) {
   "use strict";
-
+/*
   // Smooth scroll navigation
   var scrolltoOffset = $('#header').outerHeight() - 1;
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+  $(document).on('click', '.nav-new a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -19,8 +19,8 @@
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');
 
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+        if ($(this).parents('.nav-new, .mobile-nav').length) {
+          $('.nav-new .active, .mobile-nav .active').removeClass('active');
           $(this).closest('li').addClass('active');
         }
 
@@ -48,8 +48,8 @@
   });
 
   // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
+  if ($('.nav-new').length) {
+    var $mobile_nav = $('.nav-new').clone().prop({
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
@@ -84,7 +84,7 @@
 
   // Navigation active 
   var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
+  var main_nav = $('.nav-new, .mobile-nav');
 
   $(window).on('scroll', function() {
     var cur_pos = $(this).scrollTop() + 200;
@@ -100,10 +100,10 @@
         main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
       }
       if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
+        $(".nav-new ul:first li:first").addClass('active');
       }
     });
-  });
+  });*/
 
   // Back to top button
   $(window).scroll(function() {

@@ -91,19 +91,19 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.nav-menu, .nav-menu * {
+.nav-new, .nav-new * {
   margin: 0;
   padding-top: 5px;
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-new > ul > li {
   position: relative;
   white-space: nowrap;
   float: left;
 }
 
-.nav-menu a {
+.nav-new a {
   display: block;
   position: relative;
   color: #333333;
@@ -114,12 +114,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.nav-menu > ul > li + li {
+.nav-new > ul > li + li {
   margin-left: 30px;
 }
 
 /*garis menu*/
-.nav-menu > ul > li > a:before {
+.nav-new > ul > li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -132,20 +132,20 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+.nav-new a:hover:before, .nav-new li:hover > a:before, .nav-new .active > a:before {
   visibility: visible;
   width: 100%;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a {
+.nav-new a:hover, .nav-new li:hover > a {
   color: #333333;
 }
-.nav-menu li.active > a {
+.nav-new li.active > a {
   color: #333333;
   font-weight: bold;
 }
 
-.nav-menu .drop-down ul {
+.nav-new .drop-down ul {
   display: block;
   position: absolute;
   left: 0;
@@ -159,17 +159,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease all 0.3s;
 }
 
-.nav-menu .drop-down:hover > ul {
+.nav-new .drop-down:hover > ul {
   opacity: 1;
   visibility: visible;
 }
 
-.nav-menu .drop-down li {
+.nav-new .drop-down li {
   min-width: 180px;
   position: relative;
 }
 
-.nav-menu .drop-down ul a {
+.nav-new .drop-down ul a {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
@@ -177,32 +177,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #062822;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-new .drop-down ul a:hover, .nav-new .drop-down ul .active > a, .nav-new .drop-down ul li:hover > a {
   color: #1bac91;
 }
 
-.nav-menu .drop-down > a:after {
+.nav-new .drop-down > a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
 }
 
-.nav-menu .drop-down .drop-down ul {
+.nav-new .drop-down .drop-down ul {
   top: 0;
   left: calc(100% - 30px);
 }
 
-.nav-menu .drop-down .drop-down:hover > ul {
+.nav-new .drop-down .drop-down:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
 
-.nav-menu .drop-down .drop-down > a {
+.nav-new .drop-down .drop-down > a {
   padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down > a:after {
+.nav-new .drop-down .drop-down > a:after {
   content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
@@ -210,38 +210,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1366px) {
-  .nav-menu .drop-down .drop-down ul {
+  .nav-new .drop-down .drop-down ul {
     left: -90%;
   }
-  .nav-menu .drop-down .drop-down:hover > ul {
+  .nav-new .drop-down .drop-down:hover > ul {
     left: -100%;
   }
-  .nav-menu .drop-down .drop-down > a:after {
+  .nav-new .drop-down .drop-down > a:after {
     content: "\ea9d";
   }
 }
 
 /* Mobile Navigation */
-
-#logo-bottom .icon-nav-mobile img{
-  display: none;
+#menu-mobile{
+  display: none !important;
 }
 
 
 @media (max-width: 768px) {
+#menu-mobile{
+  display: block !important;
+}
+
 #logo-bottom{
-  padding-top: 10px !important;
+  display: none;
 }
-
-#logo-bottom .icon-nav-mobile img {
-    width: 30px;
-    height: 30px;
-}
-
 .fixed-top {
   display: none;
 }
+
 }
+
+
 
 .mobile-nav-toggle i{
 background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
@@ -370,7 +370,7 @@ background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
   align-items:center;
 }
 
-#logo-bottom .logo-bottom-text{
+.logo-bottom-text{
   top: 0;
   right: 0;
   left: 0;
@@ -379,12 +379,12 @@ background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
   padding: 20px 0px;
 }
 
-#logo-bottom .logo-bottom-text{
+ .logo-bottom-text{
   display: inline-block;
   vertical-align: middle;
   padding-left: 10px;
 }
-#logo-bottom .logo-bottom-text h3{
+ .logo-bottom-text h3{
   color: #333333;
   font-family: Open Sans;
   font-style: normal;
@@ -396,7 +396,7 @@ background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
   letter-spacing: -0.03em;
 }
 
-#logo-bottom .logo-bottom-text span{
+.logo-bottom-text span{
   top: 0;
   right: 0;
   left: 0;
